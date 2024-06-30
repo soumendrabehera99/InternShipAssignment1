@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="Assignment1.css">
+</head>
+<body>
+    
+    <nav>
+        <div>
+            <img src="logo1.png" alt="logo image">
+            <p>NATURE'S.COM</p>
+        </div>
+        <a href="ContactForm.html" onClick="activeContact()" id="contact">Contact Us</a>
+    </nav>
+
+    <script type="text/javascript">
+        function activeContact() {
+          document.getElementById("contact").classList.add("active");
+        }
+    </script>
+
+    <div class="welcome backgroundDiv">
+        <p style="color:aliceblue; ;">Welcome<br>To<br> <span>NATURE'S.COM</span></p><br>
+    </div>
+    
+    <div class="textImages">
+        <div class="text"><p>Welcome to Natures.com, your ultimate destination for experiencing the awe-inspiring beauty of the natural world. Here, we celebrate the wonders of our planet through a curated collection of breathtaking photographs and engaging content. Our gallery showcases the stunning diversity of nature, from the towering peaks of majestic mountains to the tranquil expanses of pristine lakes. We invite you to marvel at the intricate patterns of delicate flowers, the vibrant colors of autumn foliage, and the serene stillness of a snowy forest. Our wildlife photography captures the grace and strength of animals in their natural habitats, reminding us of the incredible biodiversity that surrounds us.</p>
+        </div>
+        <div>
+            <img src="monkey.jpg" alt="Ai image"  class="image">
+        </div>
+        <div>
+            <img src="fisher.jpg" alt="nature" class="image">
+        </div>
+
+        <div class="text"><p>At Natures.com, we believe that a deep connection to nature is essential for the well-being of both people and the planet. Our goal is to inspire a sense of wonder and reverence for the environment, encouraging you to explore, appreciate, and protect the natural world. Through our vivid imagery and thoughtful narratives, we aim to bring the outdoors into your home, offering a virtual escape to the most beautiful and remote corners of the Earth. Whether you're seeking inspiration for your next adventure, a moment of tranquility, or a deeper understanding of our planet's ecosystems, Natures.com is here to guide you on your journey.</p>
+        </div>
+    </div>
+    <div class="video">
+        <span>
+            <iframe width="914" height="514" src="https://www.youtube.com/embed/es4x5R-rV9s" title="Amazon 4k - The World’s Largest Tropical Rainforest Part 2 | Jungle Sounds | Scenic Relaxation Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </span>
+    </div>
+
+    
+    
+    <footer><p><b>!!!Discover the Beauty Around You!!!<br>&copy; ALL RIGHTS RESERVED</b></p></footer>
+</body>
+</html>

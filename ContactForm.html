@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactForm</title>
+    <link rel="stylesheet" href="Assignment1.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="logo1.png" alt="logo image">
+            <p>NATURE'S.COM</p>
+        </div>
+        <a href="ContactForm.html" style="background-color: green; color:black">Contact Us</a>
+    </nav>
+
+    <div class="paragraph"><p>Join us in celebrating the splendor of nature, and let the beauty of the world around us enrich your life. Together, we can cultivate a greater appreciation for our environment and work towards a sustainable future for all living beings. Thank you for visiting Natures.com, where every photograph tells a story and every moment in nature is a treasure.</p>
+    </div>
+
+    <h3 style="color: aqua;">Form:</h3>
+    <hr>
+    <div id="contactform">
+        
+        <form action="javascript: submitForm()" onSubmit="return validate()">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Soumendra Kumar" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="soumendrabehera99@gmail.com" required><br><br>
+            <label for="genre">Genre:</label>
+            <input list="genres" name="genre" id="genre" placeholder="choose from drop down list" required>
+            <datalist id="genres">
+                <option value="Poetry"></option>
+                <option value="Fiction"></option>
+                <option value="Non-fiction"></option>
+                <option value="Drama"></option>
+                <option value="Prose"></option>
+                <option value="Others"></option>
+            </datalist><br><br>
+            <input type="checkbox" name="msg" id="msg" required>
+            <label for="msg">SUBSCRIBE TO OUR NEWSLETTER VIA EMAIL</label><br>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </form>
+    </div>
+    <hr>
+    <script>
+        
+            function validate() {
+                let ele1= document.getElementById("name");
+                let ele2 = document.getElementById("email");
+                if(ele1.value.length < 9) {
+                  window.alert("Name length must be greater than 9 characters");
+                  return false;
+                }
+                    return true;
+              }
+              function submitForm() {
+                let ele1= document.getElementById("name");
+                let ele2 = document.getElementById("email");
+                window.alert("Hi!! "+ele1.value+" \n Thank you for Contacting Us. \n Our team will Contact you on this :"+ele2.value);
+                 <!-- window.alert("hii"); -->
+              }
+        
+    </script>
+
+    <footer><p><b>!!!Discover the Beauty Around You!!! <br>&copy; ALL RIGHTS RESERVED</b></p></footer>
+</body>
+</html>
