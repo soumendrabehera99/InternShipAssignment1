@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     background-image: url("Nature2.jpg");
-    background-size: 1490px 740px;
+    background-size: 1520px 740px;
     background-repeat:no-repeat;
     background-attachment: fixed;
 }
@@ -75,7 +75,7 @@ nav a.active {
     image-resolution: 1000dpi;
     /* opacity: 65%; */
     background-image: url("nature6.jpg");
-    background-size:  1480px 740px ;
+    background-size:  1520px 740px ;
     background-repeat: no-repeat;
     border: 1px solid rgb(166, 172, 121);
 }
@@ -168,7 +168,7 @@ nav a.active {
 footer{
     display: flex;
     background-image: url("footer1.jpeg");
-    background-size: 1490px 100px;
+    background-size: 1520px 100px;
     background-repeat: no-repeat;
     color: rgb(189, 34, 34);
     height: 100px;
