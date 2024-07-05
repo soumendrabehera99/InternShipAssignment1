@@ -10,10 +10,10 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     overflow: hidden;
     border-bottom: 1px solid rgb(202, 235, 17);
-    background-color: red;
+    /* background-color: red; */
     height: 50px;
     align-items: center;
     display: flex;
@@ -26,7 +26,8 @@ nav div{
 nav img{
     height: 50px;
     width: 50px;
-    
+    margin-left: 10px;
+    border-radius: 80px;
 }
 nav div p{
     color: rgb(151, 215, 14);
@@ -41,6 +42,7 @@ nav a{
     border: 1px solid rgb(141, 185, 11);
     border-radius: 10px;
     overflow: hidden;
+    margin-right: 10px;
 }
 
 nav a:hover {
@@ -94,7 +96,7 @@ nav a.active {
     height: 300px;
     width: 500px;
     margin: 30px;
-    color: rgb(216, 228, 135);
+    color: rgb(255, 255, 255);
     border: 1px solid rgb(128, 160, 14);
     text-align: center;
     font-size: large;
